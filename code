@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int n, i, fv[2021] = {0}, v[101];
+
+int main()
+{
+    cin >> n;
+    
+    for(i = 1; i <= n; i++)
+    {
+        cin >> v[i];
+        
+        fv[v[i]] ++;
+    }
+    
+    if
+    (
+       (fv[1010] >= 1 and fv[2] >= 1) 
+    || (fv[505] >= 1 and fv[2] >= 2) 
+    || (fv[505] >= 1 and fv[4] >= 1) 
+    || (fv[101] >= 1 and fv[5] >= 1 and fv[4] >= 1) 
+    || (fv[101] >= 1 and fv[5] >= 1 and fv[2] >= 2)
+    || (fv[101] >= 1 and fv[10] >= 1 and fv[2] >= 1)
+    || (fv[202] >= 1 and fv[10] >= 1)
+    || (fv[404] >= 1 and fv[5] >= 1)
+    || (fv[101] >= 1 and fv[20] >= 1)
+    || (fv[2020] >= 1)
+    )
+    {
+        cout << "DA";
+    }
+    else
+    {
+        cout << "NU";
+    }
+    
+    return 0;
+}
